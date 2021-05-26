@@ -1,0 +1,15 @@
+{
+  "name": "my-tecket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "start": "nodemon server.js",
+    "dev": "concurrently -n 'server,client' -c 'red,green' \"nodemon server.js \" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
