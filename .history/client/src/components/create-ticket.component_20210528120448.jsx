@@ -202,7 +202,7 @@ function CreateTicket({ setPopup, setCardUser }) {
                                  </button></td>
                                
                                <td><button className="badge bg-danger"
-                               onClick={() => deleteTicket(value._id)} 
+                              //  onClick={()=> this.deleteTicket (input._id)} 
                                ><a  >Delete</a></button></td>
                              
                             </tr>
