@@ -75,11 +75,7 @@ function CreateEmployee() {
                      required
               />
           </div>
-          {message ?
-					<div className="alert alert-danger">
-            {message}
-          </div> : null}
-          
+
           <div className="form-group">
                         <label>Password: </label>
                         <input type="password"

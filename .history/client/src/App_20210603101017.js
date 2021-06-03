@@ -7,7 +7,6 @@ import Sidebar from "./components/sidebar.component";
 import CreateTicket from "./components/create-ticket.component";
 import CreateEmployee from "./components/create-employee";
 import UpdateTicket from "./components/update/updatedTicketComponent";
-import ManageTickets from "./components/TicketLists";
 import LoginEmployer from "./components/Login-employer"
 
 

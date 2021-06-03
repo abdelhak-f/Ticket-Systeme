@@ -185,7 +185,7 @@ function CreateTicket({ setPopup, setCardUser }) {
             <th>Département</th>
             <th>Date</th>
             <th>Actions</th>
-            
+            <th>Assigned To</th>
           </tr>
         </thead>
         <tbody>

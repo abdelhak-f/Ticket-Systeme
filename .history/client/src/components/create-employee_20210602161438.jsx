@@ -6,7 +6,6 @@ const etats = ['technicien', 'responsable', 'admin'];
 
 function CreateEmployee() {
   const [message, setMessage] = useState('')
-  console.log(message);
     const [input, setInput] = useState({
             name: '',
   		      email: '',
@@ -37,9 +36,9 @@ function CreateEmployee() {
               .post("http://localhost:5000/postemployer", newEmployer)
               .then((res) => {
                 console.log("send data");
-                
+                setMessage(res.data.message)
               })
-              .catch((error) => setMessage(error.response.data.errors[0].message));
+              .catch((error) => console.log(error));
               setInput({
                 name: '',
   		          email: '',
@@ -64,7 +63,10 @@ function CreateEmployee() {
             	/>
 					</div>
             
-          
+          {message ?
+					<div className="alert alert-secondary">
+            {message}
+          </div> : null}
           <div className="form-group">
               <label>Email: </label>
               <input type="email"
@@ -75,11 +77,7 @@ function CreateEmployee() {
                      required
               />
           </div>
-          {message ?
-					<div className="alert alert-danger">
-            {message}
-          </div> : null}
-          
+
           <div className="form-group">
                         <label>Password: </label>
                         <input type="password"

@@ -7,7 +7,6 @@ import Sidebar from "./components/sidebar.component";
 import CreateTicket from "./components/create-ticket.component";
 import CreateEmployee from "./components/create-employee";
 import UpdateTicket from "./components/update/updatedTicketComponent";
-import ManageTickets from "./components/TicketLists";
 import LoginEmployer from "./components/Login-employer"
 
 
@@ -23,10 +22,10 @@ function App() {
         <Sidebar/>
         <div id="content">
                 {/* <Route path="/" exact component={Dashboard} /> */}
-                <Route path="/Login-employer" exact component={LoginEmployer} />
+                <Route path="/Login-employer" exact component={oginEmployer} />
                 <Route path="/tickets/create" component={CreateTicket} />
                  <Route path="/add-employer" component={CreateEmployee} />
-                 <Route path="/manage-tickets" component={ManageTickets} />
+                 <Route path="/manage-tickets" component={} />
                 <Route path="/updatticket/:id" component={UpdateTicket} />
                {/* <Route path="/manage-projects" component={ManageProjects} />
                 <Route path="/edit/:id" component={EditTicket} /> */}

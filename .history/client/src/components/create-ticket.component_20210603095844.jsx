@@ -182,10 +182,11 @@ function CreateTicket({ setPopup, setCardUser }) {
             <th>Type</th>
             <th>Description</th>
             <th>Project</th>
+            {/* <th>Assigned To</th> */}
             <th>Département</th>
             <th>Date</th>
+
             <th>Actions</th>
-            
           </tr>
         </thead>
         <tbody>
