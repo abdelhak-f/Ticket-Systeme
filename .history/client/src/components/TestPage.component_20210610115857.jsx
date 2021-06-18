@@ -4,7 +4,7 @@ import './style.component.css';
 function Dashboard() {
     return (
         <div className="ticket">
-            <h1>welcome to the Test pages</h1>
+            <h1>welcome to the dashboard pages</h1>
         </div>
     )
 }

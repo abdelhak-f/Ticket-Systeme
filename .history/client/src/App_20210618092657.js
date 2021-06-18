@@ -48,9 +48,9 @@ console.log('data login', type)
               <Switch>
                <Route path="/" exact component={LoginEmployer} />
                <Route path="/test" exact component={TestPage} />
-                <Route  path="/tickets/create" roles={["admin", "user"]} component={CreateTicket} />
+                <PrivateRoute  path="/tickets/create" roles={["admin", "user"]} component={CreateTicket} />
                 <Route path="/add-employer" roles={["admin"]} exact component={CreateEmployee} />
-                <Route path="/manage-tickets" roles={["admin"]}  exact component={ManageTickets} />
+                <PrivateRoute path="/manage-tickets" roles={["admin"]}  exact component={ManageTickets} />
                 <Route path="/updatticket/:id" exact  component={UpdateTicket} />
                 <Route path="*" exact  component={PageNotFound} />
               </Switch>
